@@ -1,2 +1,2 @@
 # all file to modules/contrib/
-modules/contrib/*
+# modules/contrib/* { all module commit }
