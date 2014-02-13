@@ -1,0 +1,9 @@
+name = Blocks
+description = "Ajout et override de tous les blocks"
+package = VTT
+core = 7.x
+dependencies[] = system (>7.10)
+
+core = "7.x"
+project = "blocks"
+

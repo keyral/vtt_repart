@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * Implements hook_block_view
+ */
+function blocks_block_view($delta = '') {
+    $block = array();
+    switch ($delta) {
+        case 'block_main_menu':
+            $block['subject'] = NULL;
+            $block['content'] = theme('block_main_menu', array('items' => blocks_view_main_menu()));
+            return $block;
+            break;
+    }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function blocks_block_info() {
+    $blocks['block_main_menu'] = array(
+        'info' => t('block main menu'),
+        'cache' => DRUPAL_NO_CACHE,
+        'region' => 'header',
+    );
+
+    return $blocks;
+}
+
+/**
+ * Implements hook_theme
+ */
+function blocks_theme() {
+    return array(
+        'block_main_menu' => array(
+            'template' => '/tpl/block_main_menu',
+            'render element' => 'content',
+            'variables' => array(
+                '#items' => NULL,
+            ),
+        ),
+    );
+}
+
+/**
+ * Add function blocks_view_main_menu()
+ * 
+ * To view block main menu
+ */
+function blocks_view_main_menu() {
+    $menu = menu_tree('main-menu');
+    $return = array();
+    foreach ($menu as $item) {
+        if (isset($item['#title']) && isset($item['#href'])) {
+            $return[] = array(
+                'title' => $item['#title'],
+                'href' => url($item['#href']),
+            );
+        }
+    }
+    return $return;
+}
