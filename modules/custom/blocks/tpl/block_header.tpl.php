@@ -19,9 +19,6 @@
                             </a>
                         </li>
                     <?php endforeach; ?>
-                    <li><a href="ourwork.html">Our work</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>     
                 </ul>
             <?php endif; ?>
         </div>

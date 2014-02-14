@@ -11,6 +11,12 @@ function blocks_block_view($delta = '') {
             $block['content'] = theme('block_header', array('items' => blocks_view_header()));
             return $block;
             break;
+
+        case 'block_footer':
+            $block['subject'] = NULL;
+            $block['content'] = theme('block_footer');
+            return $block;
+            break;
     }
 }
 
@@ -23,7 +29,11 @@ function blocks_block_info() {
         'cache' => DRUPAL_NO_CACHE,
         'region' => 'header',
     );
-
+    $blocks['block_header'] = array(
+        'info' => t('block footer'),
+        'cache' => DRUPAL_NO_CACHE,
+        'region' => 'footer',
+    );
     return $blocks;
 }
 
@@ -38,6 +48,10 @@ function blocks_theme() {
             'variables' => array(
                 '#items' => NULL,
             ),
+        ),
+        'block_footer' => array(
+            'template' => '/tpl/block_footer',
+            'render element' => 'content',
         ),
     );
 }
@@ -61,4 +75,4 @@ function blocks_view_header() {
         }
     }
     return $return;
-}   
+}
