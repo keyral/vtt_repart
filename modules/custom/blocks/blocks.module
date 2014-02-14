@@ -6,9 +6,9 @@
 function blocks_block_view($delta = '') {
     $block = array();
     switch ($delta) {
-        case 'block_main_menu':
+        case 'block_header':
             $block['subject'] = NULL;
-            $block['content'] = theme('block_main_menu', array('items' => blocks_view_main_menu()));
+            $block['content'] = theme('block_header', array('items' => blocks_view_header()));
             return $block;
             break;
     }
@@ -18,8 +18,8 @@ function blocks_block_view($delta = '') {
  * Implements hook_block_info().
  */
 function blocks_block_info() {
-    $blocks['block_main_menu'] = array(
-        'info' => t('block main menu'),
+    $blocks['block_header'] = array(
+        'info' => t('block header'),
         'cache' => DRUPAL_NO_CACHE,
         'region' => 'header',
     );
@@ -32,8 +32,8 @@ function blocks_block_info() {
  */
 function blocks_theme() {
     return array(
-        'block_main_menu' => array(
-            'template' => '/tpl/block_main_menu',
+        'block_header' => array(
+            'template' => '/tpl/block_header',
             'render element' => 'content',
             'variables' => array(
                 '#items' => NULL,
@@ -47,16 +47,18 @@ function blocks_theme() {
  * 
  * To view block main menu
  */
-function blocks_view_main_menu() {
+function blocks_view_header() {
     $menu = menu_tree('main-menu');
     $return = array();
+    $current_path = current_path();
     foreach ($menu as $item) {
         if (isset($item['#title']) && isset($item['#href'])) {
             $return[] = array(
                 'title' => $item['#title'],
                 'href' => url($item['#href']),
+                'class' => ($item['#href'] == $current_path || ( $item['#href'] == '<front>' && drupal_is_front_page() == TRUE)) ? 'active' : '',
             );
         }
     }
     return $return;
-}
+}   
