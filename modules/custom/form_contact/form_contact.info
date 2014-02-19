@@ -1,0 +1,9 @@
+name = Form contact
+description = "Ajout du form contact par rapport a un seul nid"
+package = VTT
+core = 7.x
+dependencies[] = system (>7.10)
+
+core = "7.x"
+project = "form_contact" 
+ 
