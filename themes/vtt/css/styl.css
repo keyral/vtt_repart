@@ -3,14 +3,14 @@ body {
 }
 
 @font-face {
-  font-family: "linecons";
-  src: url('fonts/linecons.eot');
-  src: url('fonts/linecons.eot?#iefix') format('eot'), 
-    url('fonts/linecons.woff') format('woff'), 
-    url('fonts/linecons.ttf') format('truetype'), 
-    url('fonts/linecons.svg#linecons') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: "linecons";
+    src: url('fonts/linecons.eot');
+    src: url('fonts/linecons.eot?#iefix') format('eot'), 
+        url('fonts/linecons.woff') format('woff'), 
+        url('fonts/linecons.ttf') format('truetype'), 
+        url('fonts/linecons.svg#linecons') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -65,7 +65,7 @@ a.button_dark, a.button_light {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     box-shadow: inset 0px 1px #f08715;
-    
+
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -162,46 +162,46 @@ div.cara {
     font-weight: 600;
 }
 
-    /* ----- Menu ----- */
-    
-    #menu {
-	position: absolute;
-	right: 00px;
-	font-size: 95%;
-	background: url('img/menu_cut.jpg') no-repeat scroll right;
-	margin-right: 0px;
-    }
-    
-    
-    #menu ul li {
-	float: left;
-	display: inline;
-    }
-    
-    #menu ul li a {
-	text-decoration: none;
-	color: #101115;
-	text-transform: uppercase;
-	font-weight: 300;
-	letter-spacing: 1px;
-	display: block;
-	padding: 29px 40px 0 40px;
-	height: 46px;
-	background-color: #fff;
-    }
-    
-    #menu ul li a:hover {
-	background-color: #f3f3f3;
-    }
-    
-    #menu ul li a.active {
-	background: none;
+/* ----- Menu ----- */
+
+#menu {
+    position: absolute;
+    right: 00px;
+    font-size: 95%;
+    background: url('img/menu_cut.jpg') no-repeat scroll right;
+    margin-right: 0px;
+}
+
+
+#menu ul li {
+    float: left;
+    display: inline;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #101115;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    padding: 29px 40px 0 40px;
+    height: 46px;
+    background-color: #fff;
+}
+
+#menu ul li a:hover {
+    background-color: #f3f3f3;
+}
+
+#menu ul li a.active {
+    background: none;
     background-color: green;
-	color: #fff;
-    }
-    
-    
-    /* --- */
+    color: #fff;
+}
+
+
+/* --- */
 
 
 /* ---------- Main part (slider) ---------- */
@@ -243,30 +243,30 @@ div.cara {
     margin-top: 60px;
 }
 
-		/* ---------- Main part, inner pages (headline) ---------- */
-		/* -- Some of the css already included in the previous "Main part" for homepage -- */
-		
-		#main_part_inner {
-		    height: 150px;
-		    background: url('img/main_img_1.jpg') scroll no-repeat top center;
-		}
-		
-		#main_part_inner_in {
-		    position: relative;
-		}
-		
-		#main_part_inner_in h2 {
-		    padding-top: 46px;
-		    text-align: left;
-		}
-		
-		#main_part_inner .button_main {
-		    position: absolute;
-		    top: 46px;
-		    right: 15px;
-		}
-		
-		/* --- */
+/* ---------- Main part, inner pages (headline) ---------- */
+/* -- Some of the css already included in the previous "Main part" for homepage -- */
+
+#main_part_inner {
+    height: 150px;
+    background: url('img/main_img_1.jpg') scroll no-repeat top center;
+}
+
+#main_part_inner_in {
+    position: relative;
+}
+
+#main_part_inner_in h2 {
+    padding-top: 46px;
+    text-align: left;
+}
+
+#main_part_inner .button_main {
+    position: absolute;
+    top: 46px;
+    right: 15px;
+}
+
+/* --- */
 
 
 /* ---------- Content ---------- */
@@ -274,7 +274,8 @@ div.cara {
 #content {
     width: 960px;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #content_inner {
@@ -283,354 +284,378 @@ div.cara {
     padding-top: 0;
 }
 
-    /* ----- thirds / fourths (homepage) / sixths (about)----- */
+/* ----- thirds / fourths (homepage) / sixths (about)----- */
 
-    .thirds {
-	width: 300px;
-	margin: 0 10px 0 10px;
-	float: left;
-    }
-    
+.thirds {
+    width: 300px;
+    margin: 0 10px 0 10px;
+    float: left;
+}
+
+#content h1 {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 250%;
+    font-weight: 300;
+    color: #27292a;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#content h2 {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 200%;
+    font-weight: 300;
+    color: #27292a;
+    margin-bottom: 18px;   
+}
 #content h3 {
-	margin-top: 0;
-	margin-left: 0;
-	font-size: 150%;
-	font-weight: 300;
-	color: #27292a;
-	margin-bottom: 18px;   
-    }
-    
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 150%;
+    font-weight: 300;
+    color: #27292a;
+    margin-bottom: 18px;   
+}
+#content h1:first-letter,
+#content h2:first-letter,
+#content h3:first-letter, 
+#content p:first-letter {
+    text-transform: uppercase;  
+}
+
 #content p {
-	font-size: 90%;
-	color: #37393a;
-	line-height: 160%;
-    }
-    
-    .fourths_portfolio {
-	width: 220px;
-	height: 220px;
-	margin: 0 10px 20px 10px;
-	background-color: #e66e0d;
-	float: left;
-	position: relative;
-    }
-    
-    .fourths_portfolio a {
-	display: block;
-	width: 220px;
-	height: 220px;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-    }
-    
-    .fourths_portfolio a:hover {
-	opacity: 0.15;
-    }
-    
+    font-size: 90%;
+    color: #37393a;
+    line-height: 160%;
+}
+   
+.fourths_portfolio {
+    width: 220px;
+    height: 220px;
+    margin: 0 10px 20px 10px;
+    background-color: #e66e0d;
+    float: left;
+    position: relative;
+}
+
+.fourths_portfolio a {
+    display: block;
+    width: 220px;
+    height: 220px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.fourths_portfolio a:hover {
+    opacity: 0.15;
+}
+
 #content h4 {
-	position: absolute;
-	top: 80px;
-	display: block;
-	width: 220px;
-	text-align: center;
-	text-shadow: 0px 1px #d72d05;
-    }
-    
-    .fourths_portfolio img {
-	position: absolute;
-    }
-    
-    .fourths_portfolio span {
-	font-size: 90%;
-	font-weight: 200;
-	text-shadow: 0px 1px #b70d02;
-    }
-    
-    .sixths_team {
-	width: 140px;
-	height: 160px;
-	margin: 0 10px 0 10px;
-	background-color: #e66e0d;
-	float: left;
-	position: relative;
-    }
-    
-    .sixths_team a {
-	display: block;
-	width: 140px;
-	height: 140px;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-    }
-    
-    .sixths_team a.profession {
-	display: block;
-	width: 140px;
-	height: 20px;
-	background-color: #fff;
-	text-decoration: none;
-	font-size: 95%;
-	padding-top: 10px;
-    }
-    
-    .sixths_team a.profession:hover {
-	opacity: 1;
-    }
-    
-    .sixths_team a:hover {
-	opacity: 0.10;
-    }
-    
-    .sixths_team h4 {
-	position: absolute;
-	top: 50px;
-	display: block;
-	width: 140px;
-	text-align: center;
-	text-shadow: 0px 1px #d72d05;
-	font-weight: 200;
-	font-size: 100%;
-	line-height: 140%;
-    }
-    
-    .sixths_team img {
-	position: absolute;
-    }
-    
-    .sixths_team span {
-	font-weight: 400;
-	text-shadow: 0px 1px #b70d02;
-    }
-    
-    /* --- */
-    
-		/* ----- History (About us) ----- */
-		/* --- this section is really not pixel-perfect, so you might want to redo it, if it doesn't fit your needs :) */
-    
-		.history_blok {
-		    background-color: #1e2022;
-		    width: 855px;
-		    min-height: 100px;
-		    margin: 70px 0 0 10px;
-		    padding: 43px 40px 30px 45px;
-		}
-		
-		.history_blok h3 {
-		    color: #f8f9f9;
-		    font-weight: 200;
-		    margin: 0;
-		}
-		
-		.history_blok img.milestones {
-		    margin: 30px 0 0 -13px;
-		}
-		
-		.milestone1, .milestone2, .milestone3, .milestone4 {
-		    width: 170px;
-		    float: left;
-		    margin-left: 32px;
-		}
-		
-		.milestone1 {
-		    margin-left: 0;
-		}
-		
-		.milestone2 {
-		    width: 188px;
-		}
-		
-		.milestone3 {
-		    width: 205px;
-		}
-		
-		.milestone4 {
-		    width: 190px;
-		}
-		
-		.miles {
-		    padding-top: 2px;
-		    font-size: 95%;
-		    font-weight: 300;
-		    line-height: 180%;
-		    color: #e9ecef;
-		}
-		
-		.miles b {
-		    font-size: 105%;
-		    font-weight: 400;
-		}
-		
-		.descr {
-		    margin-top: 3px;
-		    color: #a4a8ad;
-		    font-size: 90%;
-		    font-weight: 300;
-		    line-height: 150%;
-		}
-		
-		.moreabout {
-		    background-color: #1e2022;
-		    width: 855px;
-		    min-height: 100px;
-		    padding: 35px 40px 40px 45px;
-		    margin-left: 10px;
-		    margin-bottom: 60px;
-		    border-top: 1px #292b2d solid;
-		}
-		
-		.moreabout p {
-		    width: 860px;
-		    color: #e9ecef;
-		    font-size: 115%;
-		    font-weight: 200;
-		    line-height: 160%;
-		    margin-bottom: 25px;
-		}
-		
-		.moreabout b {
-		    font-weight: 400;
-		    color: #fff;
-		}
-		
-		
-		/* --- */
-		
-		/* ----- Services (About us) ----- */
-		
-		a.services_list {
-		    width: 298px;
-		    height: 85px;
-		    display: block;
-		    float: left;
-		    margin: 8px 10px 12px 10px;
-		    border: 1px #ccc solid;
-		    text-decoration: none;
-		    color: #333;
-		    -webkit-transition: all 0.2s ease-in-out;
-		    -moz-transition: all 0.2s ease-in-out;
-		    -o-transition: all 0.2s ease-in-out;
-		    -ms-transition: all 0.2s ease-in-out;
-		    transition: all 0.2s ease-in-out;
-		    position: relative;
-		}
-		
-		a:hover.services_list {
-		    background-color: #1e2022;
-		    border: 1px #1e2022 solid;
-		    color: #e4e4e4;
-		    font-weight: 100;
-		}
-	    
-		
-		.services_list span {
-		    display: block;
-		    float: left;
-		    width: 179px;
-		    margin-left: 100px;
-		    font-size: 105%;
-		    padding-top: 19px;
-		}
-		
-		.services_list span b {
-		    font-weight: 400;
-		    line-height: 140%;
-		}
-		
-		
-		a.services_list span.icon_services {
-		    display: block;
-		    float: left;
-		    width: 62px;
-		}
-		
-		    /* -- Web Icons (linecons) -- */
-		    
-		    .ico_paperplane:before, .ico_iphone:before, .ico_food:before, .ico_message:before, .ico_mapmark:before, .ico_shop:before {
-			font-family: linecons;
-			font-weight: 100;
-			font-style: normal;
-			font-size: 310%;
-			position: absolute;
-			top: 14px;
-			left: 17px;
-			-webkit-font-smoothing: antialiased;
-		    }
-		    
-		    .ico_paperplane:before {
-			content: "\e01e";
-		    }
-		    
-		    .ico_iphone:before {
-			content: "\e017";
-			left: 20px;
-		    }
-		    
-		    .ico_food:before {
-			content: "\e026";
-			left: 19px;
-			top: 13px;
-		    }
-		    
-		    .ico_message:before {
-			content: "\e019";
-			left: 21px;
-		    }
-		    
-		    .ico_mapmark:before {
-			content: "\e012";
-			left: 21px;
-		    }
-		    
-		    .ico_shop:before {
-			content: "\e02a";
-			left: 22px;
-		    }
-		
-		    /* ---- */
-		    
-		    
-    /* --------- Our Work (portfolio stuffs) ---------- */
-		
-    ul#work_filter {
+    position: absolute;
+    top: 80px;
+    display: block;
+    width: 220px;
+    text-align: center;
+    text-shadow: 0px 1px #d72d05;
+}
+
+.fourths_portfolio img {
+    position: absolute;
+}
+
+.fourths_portfolio span {
+    font-size: 90%;
+    font-weight: 200;
+    text-shadow: 0px 1px #b70d02;
+}
+
+.sixths_team {
+    width: 140px;
+    height: 160px;
+    margin: 0 10px 0 10px;
+    background-color: #e66e0d;
+    float: left;
+    position: relative;
+}
+
+.sixths_team a {
+    display: block;
+    width: 140px;
+    height: 140px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.sixths_team a.profession {
+    display: block;
+    width: 140px;
+    height: 20px;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 95%;
+    padding-top: 10px;
+}
+
+.sixths_team a.profession:hover {
+    opacity: 1;
+}
+
+.sixths_team a:hover {
+    opacity: 0.10;
+}
+
+.sixths_team h4 {
+    position: absolute;
+    top: 50px;
+    display: block;
+    width: 140px;
+    text-align: center;
+    text-shadow: 0px 1px #d72d05;
+    font-weight: 200;
+    font-size: 100%;
+    line-height: 140%;
+}
+
+.sixths_team img {
+    position: absolute;
+}
+
+.sixths_team span {
+    font-weight: 400;
+    text-shadow: 0px 1px #b70d02;
+}
+
+/* --- */
+
+/* ----- History (About us) ----- */
+/* --- this section is really not pixel-perfect, so you might want to redo it, if it doesn't fit your needs :) */
+
+.history_blok {
+    background-color: #1e2022;
+    width: 855px;
+    min-height: 100px;
+    margin: 70px 0 0 10px;
+    padding: 43px 40px 30px 45px;
+}
+
+.history_blok h3 {
+    color: #f8f9f9;
+    font-weight: 200;
+    margin: 0;
+}
+
+.history_blok img.milestones {
+    margin: 30px 0 0 -13px;
+}
+
+.milestone1, .milestone2, .milestone3, .milestone4 {
+    width: 170px;
+    float: left;
+    margin-left: 32px;
+}
+
+.milestone1 {
+    margin-left: 0;
+}
+
+.milestone2 {
+    width: 188px;
+}
+
+.milestone3 {
+    width: 205px;
+}
+
+.milestone4 {
+    width: 190px;
+}
+
+.miles {
+    padding-top: 2px;
+    font-size: 95%;
+    font-weight: 300;
+    line-height: 180%;
+    color: #e9ecef;
+}
+
+.miles b {
+    font-size: 105%;
+    font-weight: 400;
+}
+
+.descr {
+    margin-top: 3px;
+    color: #a4a8ad;
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.moreabout {
+    background-color: #1e2022;
+    width: 855px;
+    min-height: 100px;
+    padding: 35px 40px 40px 45px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    border-top: 1px #292b2d solid;
+}
+
+.moreabout p {
+    width: 860px;
+    color: #e9ecef;
+    font-size: 115%;
+    font-weight: 200;
+    line-height: 160%;
+    margin-bottom: 25px;
+}
+
+.moreabout b {
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/* --- */
+
+/* ----- Services (About us) ----- */
+
+a.services_list {
+    width: 298px;
+    height: 85px;
+    display: block;
+    float: left;
+    margin: 8px 10px 12px 10px;
+    border: 1px #ccc solid;
+    text-decoration: none;
+    color: #333;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+a:hover.services_list {
+    background-color: #1e2022;
+    border: 1px #1e2022 solid;
+    color: #e4e4e4;
+    font-weight: 100;
+}
+
+
+.services_list span {
+    display: block;
+    float: left;
+    width: 179px;
+    margin-left: 100px;
+    font-size: 105%;
+    padding-top: 19px;
+}
+
+.services_list span b {
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+a.services_list span.icon_services {
+    display: block;
+    float: left;
+    width: 62px;
+}
+
+/* -- Web Icons (linecons) -- */
+
+.ico_paperplane:before, .ico_iphone:before, .ico_food:before, .ico_message:before, .ico_mapmark:before, .ico_shop:before {
+    font-family: linecons;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 310%;
+    position: absolute;
+    top: 14px;
+    left: 17px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ico_paperplane:before {
+    content: "\e01e";
+}
+
+.ico_iphone:before {
+    content: "\e017";
+    left: 20px;
+}
+
+.ico_food:before {
+    content: "\e026";
+    left: 19px;
+    top: 13px;
+}
+
+.ico_message:before {
+    content: "\e019";
+    left: 21px;
+}
+
+.ico_mapmark:before {
+    content: "\e012";
+    left: 21px;
+}
+
+.ico_shop:before {
+    content: "\e02a";
+    left: 22px;
+}
+
+/* ---- */
+
+
+/* --------- Our Work (portfolio stuffs) ---------- */
+
+ul#work_filter {
     margin: 60px 0 42px 0;
-    }
-	    
-    #work_filter li a, .pagination li a {
+}
+
+#work_filter li a, .pagination li a {
     text-decoration: none;
     color: #27292a;
     font-size: 100%;
     font-weight: 200;
     letter-spacing: 1px;
-    }
-	    
-    #work_filter li a:hover, .pagination li a:hover {
+}
+
+#work_filter li a:hover, .pagination li a:hover {
     color: #000;
     font-weight: 400;
-    }
-	    
-    #work_filter li a.active, .pagination li a.active {
+}
+
+#work_filter li a.active, .pagination li a.active {
     font-weight: 400;
-    }
-		
-    #work_filter li, .pagination li {
+}
+
+#work_filter li, .pagination li {
     display: inline;
     margin: 0 10px 0 10px;
-    }
-    
-    .pagination {
-	text-align: right;
-	margin-top: 20px;
-    }
-    
-		
-		
-		
+}
+
+.pagination {
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+
+
 
 
 p.youlike, p.teamline {
@@ -705,7 +730,7 @@ p.about {
 }
 
 .testimonials ul.controls {
-    
+
 }
 
 .testimonials ul.controls li {
@@ -795,87 +820,7 @@ form.formit .button_submit {
 }
 
 
-
-/* ---------- Footer ---------- */
-
-
-
-
-#footer {
-    width: 100%;
-    height: 182px;
-    background: url('img/bg_footer.jpg') scroll no-repeat center;
-    background-color: #000;
-    color: #a5a5a5;
-    font-weight: 300;
-    font-size: 90%;
-    margin-top: 80px;
-}
-
-#footer_in {
-    width: 960px;
-    margin: auto;
-    position: relative;
-    padding-top: 50px;
-}
-
-#footer_in p {
-    float: left;
-}
-
-#footer_in a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#footer_in a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-
-#footer_in span {
-    position: absolute;
-    right: 10px;
-}
-
-
-
-/* ---------- Other elements ---------- */
-
-.banner1 {
-    width: 890px;
-    height: 76px;
-    padding: 42px 0 0 50px;
-    margin: auto;
-    margin-bottom: 0px;
-    margin-top: 45px;
-    background: url('img/banner1.jpg') no-repeat scroll;
-    background-color: #000;
-    color: #c3ccd5;
-    position: relative;
-}
-
-.banner1 p {
-    font-weight: 200; 
-    font-size: 20pt;
-    display: block;
-    width: 630px;
-    text-shadow: 0px 1px #000;
-}
-
-.banner1 p b {
-    color: #fff;
-    font-weight: 300;
-}
-
-.banner1 a.button_dark {
-    width: 100px;
-    position: absolute;
-    right: 42px;
-    top: 30px;
-}
-/* Header background */
-#header-background {
+#header_background {
     background-color: green;
     height: 100px;   
     width: 960px;
@@ -883,9 +828,19 @@ form.formit .button_submit {
     padding: 0 10px;
 }
 
+#footer {
+    width: 960px;
+    margin: auto;
+    background-color:green;
+    padding: 0 10px;
+    
+}
 
-
-
+/* ------ ADMIN ------- */
+.tabs-primary, .tabs-secondary {
+    margin-bottom: 20px;
+    margin-top: 50px;   
+}
 
 
 

@@ -7,7 +7,7 @@
 <div id="header">
     <div id="header_in">
 
-        <h1><a href="<?php print url('<front>'); ?>"><?php print variable_get('site_name', 'Site Name'); ?></a></h1>
+        <h1><a href="<?php print url('<front>');?>"><?php print variable_get('site_name', 'Site Name'); ?></a></h1>
 
         <div id="menu">
             <?php if (isset($items)): ?>
@@ -24,8 +24,5 @@
         </div>
 
     </div>
-    <div id="header-background">
-
-
-    </div>
+    <div id="header_background"></div>
 </div>

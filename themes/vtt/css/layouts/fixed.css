@@ -28,34 +28,7 @@
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
-#footer {
-  padding-left: 10px;
-  padding-right: 10px;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  word-wrap: break-word;
-  *behavior: url("/path/to/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
 
-/* Containers for grid items and flow items. */
-#header,
-#main,
-#footer {
-  *position: relative;
-  *zoom: 1;
-}
-#header:before,
-#header:after,
-#main:before,
-#main:after,
-#footer:before,
-#footer:after {
-  content: "";
-  display: table;
-}
 #header:after,
 #main:after,
 #footer:after {

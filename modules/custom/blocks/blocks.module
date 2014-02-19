@@ -29,7 +29,7 @@ function blocks_block_info() {
         'cache' => DRUPAL_NO_CACHE,
         'region' => 'header',
     );
-    $blocks['block_header'] = array(
+    $blocks['block_footer'] = array(
         'info' => t('block footer'),
         'cache' => DRUPAL_NO_CACHE,
         'region' => 'footer',
