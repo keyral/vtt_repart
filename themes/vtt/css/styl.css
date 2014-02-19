@@ -196,6 +196,7 @@ div.cara {
     
     #menu ul li a.active {
 	background: none;
+    background-color: green;
 	color: #fff;
     }
     
@@ -290,7 +291,7 @@ div.cara {
 	float: left;
     }
     
-    .thirds h3 {
+#content h3 {
 	margin-top: 0;
 	margin-left: 0;
 	font-size: 150%;
@@ -299,7 +300,7 @@ div.cara {
 	margin-bottom: 18px;   
     }
     
-    .thirds p {
+#content p {
 	font-size: 90%;
 	color: #37393a;
 	line-height: 160%;
@@ -329,7 +330,7 @@ div.cara {
 	opacity: 0.15;
     }
     
-    .fourths_portfolio h4 {
+#content h4 {
 	position: absolute;
 	top: 80px;
 	display: block;
