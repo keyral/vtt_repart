@@ -1,0 +1,67 @@
+<?php
+
+function form_contact_form(){
+    $form = array();
+        // Markup de gestion des message d'erreur ou de succes.
+    $form['box'] = array(
+        '#type' => 'markup',
+        '#prefix' => '<div id="box-message">',
+        '#suffix' => '</div>',
+        '#markup' => ' ',
+    );
+    
+    $form['boxing_interne']['prenom'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Prénom'),  
+        '#size' => 30,
+    );
+    $form['boxing_interne']['nom'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Nom'),
+        '#size' => 30,
+    );
+    $form['boxing_interne']['objet'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Objet'),
+        '#size' => 30,
+    );
+    $form['boxing_interne']['email'] = array(
+        '#type' => 'textfield',
+        '#title' => t('E-mail'),
+        '#size' => 30,
+        '#suffix' => '</div>',
+    );
+    $form['boxing_interne']['message'] = array(
+        '#type' => 'textarea',
+        '#title' => t('Message'),
+        '#cols' => 30,
+    );
+
+    $form ['submit'] = array(
+        '#type' => 'submit',
+        '#ajax' => array(
+            'callback' => 'form_contact_form_callback_message',
+            'wrapper' => 'box',
+        ),
+        '#value' => t('Envoyer '),
+    );
+
+    return $form;
+    
+    
+    
+    return $form;
+}
+
+
+/**
+ * Add function form_contact_form_callback_message
+ * 
+ * @param array $form
+ * @param array $form_state
+ * 
+ * Add function to request ajax.
+ */
+function form_contact_form_callback_message($form, &$form_state){
+    var_dump($form_state);
+}

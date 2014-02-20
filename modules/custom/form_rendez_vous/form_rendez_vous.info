@@ -1,0 +1,9 @@
+name = Form Rendez vous.
+description = "Ajout du form & d'administration pour les rendez vous pris sur le site."
+package = VTT
+core = 7.x
+dependencies[] = system (>7.10)
+
+core = "7.x"
+project = "form_rendez_vous" 
+ 

@@ -168,7 +168,6 @@ div.cara {
     position: absolute;
     right: 00px;
     font-size: 95%;
-    background: url('img/menu_cut.jpg') no-repeat scroll right;
     margin-right: 0px;
 }
 
@@ -199,56 +198,11 @@ div.cara {
     background-color: green;
     color: #fff;
 }
-
-
-/* --- */
-
-
-/* ---------- Main part (slider) ---------- */
-
-
-
-#main_part, #main_part_inner {
-    width: 100%;
-    height: 465px;
-    background: url('img/main_img_1.jpg') scroll no-repeat center;
-    background-color: #000;
-    border-bottom: 7px solid #e5e5e5;
-}
-
-#main_part_in, #main_part_inner_in {
-    width: 960px;
-    margin: auto;
-}
-
-#main_part_in h2, #main_part_inner_in h2 {
-    padding-top: 120px;
-    padding-bottom: 14px;
-    font-size: 280%;
-    font-weight: 200;
-    text-align: center;
-    color: #fff;
-    text-shadow: 0px 1px #000;
-}
-
-#main_part_in p {
-    font-size: 150%;
-    font-weight: 300;
-    color: #bcbcbc;
-    text-align: center;
-    text-shadow: 0px 1px #000;
-}
-
-#main_part .button_main {
-    margin-top: 60px;
-}
-
 /* ---------- Main part, inner pages (headline) ---------- */
 /* -- Some of the css already included in the previous "Main part" for homepage -- */
 
 #main_part_inner {
     height: 150px;
-    background: url('img/main_img_1.jpg') scroll no-repeat top center;
 }
 
 #main_part_inner_in {
@@ -841,8 +795,43 @@ form.formit .button_submit {
     margin-bottom: 20px;
     margin-top: 50px;   
 }
+.form-item {
+    margin: 0;
+}
 
-
+/*  ------- FORM CONTACT ------ */
+#form-contact-form {
+    padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif, 'verdana';
+    font-weight: 200;
+    font-style: normal;
+}
+#form-contact-form .form-item label {
+    font-family: Verdana,Tahoma,"DejaVu Sans",sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#form-contact-form .grippie {
+    display: none;
+}
+#form-contact-form .form-item-prenom,
+#form-contact-form .form-item-objet{
+    float: right; 
+}
+#form-contact-form #edit-submit {
+    background-color:#929292;
+    font-family: Verdana,Tahoma,"DejaVu Sans",sans-serif;
+    border: none;
+    height:30px;
+    width: 100px;
+    margin: 20px auto;
+    color: white;
+}
+#form-contact-form #edit-submit:hover,
+#form-contact-form #edit-submit:active{
+    color:#000;
+    background-color:white;
+}
 
 
 
